@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Alaa Task Manager</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+</head>
+<body>
+
+<header>
+    <div class="header-container">
+        <h1>Alaa Task Manager</h1>
+        <p>Manage your daily tasks !</p>
+        <div class="search-container" style="width: 50% ; justify-self: center;">
+            <input type="text" id="searchInput" placeholder="Search tasks...">
+        </div>
+    </div>
+</header>
+
+<main>
+    <h2>Add a New Task</h2>
+    <div class="input-container">
+        <input type="text" id="taskInput" placeholder="Enter task name...">
+        <input type="text" id="Description" placeholder="Enter task description...">
+        <button id="addTaskBtn">Add Task</button>
+    </div>
+
+    <div class="task-list-section">
+        <h2>Your Tasks</h2>
+        <ul id="taskList"></ul>
+    </div>
+</main>
+
+<footer>
+    <div class="footer-container">
+        <p>&copy; 2024 Alaa Task Manager</p>
+    </div>
+</footer>
+
+<script src="interact.js"></script>
+</body>
+</html>

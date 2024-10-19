@@ -1,0 +1,175 @@
+/* Body and General Styling */
+body {
+    font-family: 'Arial', sans-serif;
+    background: #1E1E1E; /* Dark background for modern look */
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+    color: #E0E0E0; /* Light grey for text */
+}
+
+/* Header Styling */
+header {
+    background-color: #2E2E2E; /* Dark grey for header */
+    color: #FFFFFF; /* White for header text */
+    padding: 30px 0;
+    text-align: center;
+    border-bottom: 5px solid #00FF00; /* Neon green accent border */
+}
+
+.header-container h1 {
+    font-size: 3rem; /* Increased font size */
+    margin: 0;
+}
+
+.header-container p {
+    font-size: 1.5rem; /* Increased font size */
+    margin-top: 10px;
+}
+
+/* Main Content Section Styling */
+main {
+    flex: 1;
+    padding: 40px; /* Increased padding */
+    width: 500px; /* Increased max width */
+    margin: 0 auto;
+    background: #2E2E2E; /* Dark grey for main content */
+    border-radius: 20px;
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.5);
+}
+
+/* Section Headings */
+h2 {
+    color: #00FF00; /* Neon green for section titles */
+    text-align: center;
+    margin-bottom: 20px; /* Increased margin */
+}
+
+/* Task Input and Search Sections */
+.input-container {
+    display: flex;
+    flex-direction: column; /* Change to column for inputs */
+    margin-bottom: 30px;
+    gap: 15px; /* Increased space between inputs */
+}
+
+input[type="text"] {
+    width: 100%;
+    padding: 15px; /* Increased padding */
+    border: 2px solid #CCCCCC; /* Light grey border for input */
+    border-radius: 25px;
+    font-size: 1.2rem; /* Increased font size */
+    transition: border-color 0.3s, box-shadow 0.3s;
+    background: #333333; /* Dark grey background for input */
+    color: #E0E0E0; /* Light grey text for input */
+}
+
+input[type="text"]:focus {
+    border-color: #00FF00; /* Neon green on focus */
+    outline: none;
+    box-shadow: 0 6px 20px rgba(0, 0, 0, 0.5);
+}
+
+button {
+    padding: 15px 30px; /* Increased padding */
+    background-color: #00BFFF; /* Electric blue for buttons */
+    border: none;
+    color: #FFFFFF; /* White for button text */
+    font-size: 1.2rem; /* Increased font size */
+    border-radius: 25px;
+    cursor: pointer;
+    transition: background-color 0.3s, box-shadow 0.3s;
+}
+
+button:hover {
+    background-color: #00FF00; /* Neon green on hover */
+    box-shadow: 0 6px 20px rgba(0, 0, 0, 0.5);
+}
+
+/* Task List Section */
+.task-list-section {
+    margin-top: 30px;
+}
+
+#taskList {
+    list-style-type: none;
+    padding: 0;
+}
+
+.task {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #333333; /* Dark grey for task items */
+    border: 2px solid #00BFFF; /* Electric blue border */
+    border-radius: 15px;
+    padding: 15px; /* Increased padding */
+    margin-bottom: 15px;
+    transition: background-color 0.3s, transform 0.3s;
+}
+
+.task:hover {
+    background-color: #444444; /* Slightly lighter grey on hover */
+    transform: translateY(-2px);
+}
+
+.task div {
+    flex: 1;
+}
+
+.task span {
+    display: block; /* Display block for two lines */
+    font-size: 1.4rem; /* Increased font size */
+    color: #E0E0E0; /* Light grey for task text */
+}
+
+.task-description {
+    font-size: 1.1rem; /* Increased font size */
+    color: #AAAAAA; /* Lighter grey for task description */
+}
+
+.completed {
+    text-decoration: line-through;
+    color: #777777; /* Darker grey for completed tasks */
+}
+
+/* Task Actions Section */
+.task-actions {
+    display: flex;
+    gap: 15px; /* Increased gap between buttons */
+}
+
+.task-actions button {
+    border: none;
+    background: none;
+    cursor: pointer;
+    transition: transform 0.2s;
+}
+
+.task-actions button i {
+    font-size: 1.8rem; /* Increased font size */
+    color: #00BFFF; /* Electric blue for icons */
+    transition: color 0.3s, transform 0.3s;
+}
+
+.task-actions button i:hover {
+    color: #00FF00; /* Neon green on icon hover */
+    transform: scale(1.2);
+}
+
+/* Footer Styling */
+footer {
+    background-color: #2E2E2E; /* Dark grey for footer */
+    color: #FFFFFF; /* White for footer text */
+    text-align: center;
+    padding: 20px 0;
+    margin-top: 40px;
+    box-shadow: 0 -4px 15px rgba(0, 0, 0, 0.5);
+}
+
+.footer-container p {
+    margin: 0;
+    font-size: 1rem; /* Increased font size */
+}
